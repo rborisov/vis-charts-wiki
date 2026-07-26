@@ -1,0 +1,6 @@
+[
+  { "x": 1, "y": 120, "group": "north" },
+  { "x": 2, "y": 150, "group": "north" },
+  { "x": 1, "y": 80, "group": "south" },
+  { "x": 2, "y": 95, "group": "south" }
+]
