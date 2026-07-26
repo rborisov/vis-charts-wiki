@@ -11,7 +11,7 @@ Defaults to `time`.
 | `numeric` | `42` | Measurements, counts, anything numeric that isn't a date |
 | `category` | `"Mon"` | Named, unordered categories like weekdays or labels |
 
-See `docs/examples/axes-and-legend.md` for a runnable block of each mode.
+See `../../examples/graph2d/axes-and-legend.md` for a runnable block of each mode.
 
 ## Block reference
 
@@ -24,22 +24,22 @@ without the plugin knowing about them.
 | --- | --- | --- |
 | `xAxis` | `time \| numeric \| category` | X-axis interpretation. Default `time`. |
 | `height` | CSS length, e.g. `"400px"` | Height of the **plotting area**. The rendered widget is this tall plus the x-axis strip drawn beneath it (roughly 30px). |
-| `legend` | `boolean \| object` | Show a legend; see `docs/examples/axes-and-legend.md` for positioning. |
+| `legend` | `boolean \| object` | Show a legend; see `../../examples/graph2d/axes-and-legend.md` for positioning. |
 | `stack` | `boolean` | Stack bar groups at each `x` instead of overlapping them. |
-| `sort` | `boolean` | Sort items by `x` before drawing. See `docs/examples/chart-types.md` for a large-series example. |
-| `sampling` | `boolean` | Downsample dense line series for performance. See `docs/examples/chart-types.md`. |
+| `sort` | `boolean` | Sort items by `x` before drawing. See `../../examples/graph2d/chart-types.md` for a large-series example. |
+| `sampling` | `boolean` | Downsample dense line series for performance. See `../../examples/graph2d/chart-types.md`. |
 | `zoomable` | `boolean` | Allow the user to zoom the chart. |
 | `moveable` | `boolean` | Allow the user to pan the chart. |
 | `zoomKey` | `string` | Modifier key (e.g. `"ctrlKey"`) required to zoom with the scroll wheel. |
-| `start` / `end` | axis value | Initial visible range, in your data's own units on every axis mode (numeric/category values are mapped onto Graph2d's internal range for you). Either may be given alone; the other is filled in from the data. See `docs/examples/axes-and-legend.md`. |
+| `start` / `end` | axis value | Initial visible range, in your data's own units on every axis mode (numeric/category values are mapped onto Graph2d's internal range for you). Either may be given alone; the other is filled in from the data. See `../../examples/graph2d/axes-and-legend.md`. |
 | `min` / `max` | axis value | Bounds beyond which the user cannot pan or zoom. Same unit handling as `start`/`end`. |
 | `zoomMin` / `zoomMax` | number | Tightest/widest allowed zoom, as a **duration** rather than a position. On `numeric`/`category` axes this is also in your own data's units (e.g. `zoomMin: 2` means "never zoom in past a 2-unit-wide window"), converted internally the same way `start`/`end` are. |
 | `dataAxis` | object | Left/right axis titles, ranges, `alignZeros`, `icons`. |
 | `barChart` | object | `sideBySide`, `align`, `minWidth` for bar groups. |
 | `drawPoints` | `boolean \| object` | Default point-drawing behaviour for all groups. |
 | `showCurrentTime` | `boolean` | Draw a marker at the current time (time axis only). |
-| `locale` | `string` | Locale for vis's built-in date formatting (time axis only — numeric/category labels are formatted by this plugin, not by locale). See `docs/examples/axes-and-legend.md`. |
-| `groups` | object | Raw vis group settings, e.g. `groups.visibility` (initial shown/hidden state per group id) — **not** the same thing as the block's own top-level `groups:` key documented below, despite the shared name. See `docs/examples/axes-and-legend.md`. |
+| `locale` | `string` | Locale for vis's built-in date formatting (time axis only — numeric/category labels are formatted by this plugin, not by locale). See `../../examples/graph2d/axes-and-legend.md`. |
+| `groups` | object | Raw vis group settings, e.g. `groups.visibility` (initial shown/hidden state per group id) — **not** the same thing as the block's own top-level `groups:` key documented below, despite the shared name. See `../../examples/graph2d/axes-and-legend.md`. |
 | `moment` | function | **Footgun:** setting this yourself overrides the UTC pin that `numeric` and `category` axis labels depend on internally, which will visibly shift or break those labels. Leave it unset on those two modes; it's safe (and has its ordinary vis meaning) on `time`. |
 
 ## Item reference
@@ -52,7 +52,7 @@ Fields on each entry in `items:`.
 | `y` | Numeric value. Required. |
 | `group` | Id of the group this point belongs to. |
 | `end` | End position for a spanning bar (draws from `x` to `end`). |
-| `label` | `{ content, xOffset, yOffset, className }` — a text label attached to the point. See `docs/examples/chart-types.md` for a runnable example. |
+| `label` | `{ content, xOffset, yOffset, className }` — a text label attached to the point. See `../../examples/graph2d/chart-types.md` for a runnable example. |
 
 ## Group reference
 
@@ -70,7 +70,7 @@ Friendly fields:
 | --- | --- |
 | `type: line \| bar \| points` | The group's graph type. |
 | `color` | Stroke and fill colour. |
-| `fill` | `true`, `"below"`, `"above"`, `{ below: true }`, `{ above: true }`, or `{ to: otherGroupId }` — shaded area. Precedence when more than one could match: `to` > `below` > `above`. A numeric `below`/`above` (e.g. `{ below: 20 }`) throws: shading is relative to the axis, not an arbitrary value — see `docs/examples/styling.md`. |
+| `fill` | `true`, `"below"`, `"above"`, `{ below: true }`, `{ above: true }`, or `{ to: otherGroupId }` — shaded area. Precedence when more than one could match: `to` > `below` > `above`. A numeric `below`/`above` (e.g. `{ below: 20 }`) throws: shading is relative to the axis, not an arbitrary value — see `../../examples/graph2d/styling.md`. |
 | `width` | Stroke width in pixels. |
 | `dashes` | Dash pattern, e.g. `[5, 5]`. |
 | `points` | `false`, or `{ style: circle \| square, size }` — point markers. |
