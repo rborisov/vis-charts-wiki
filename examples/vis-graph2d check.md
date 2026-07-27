@@ -2,7 +2,7 @@
 
 Scratch note for verifying the plugin renders correctly. Safe to delete.
 Tick each box as you confirm it.
-
+2026-07-27
 
 ## 1. Time axis — should show readable date labels
 
