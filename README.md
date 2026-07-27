@@ -20,7 +20,10 @@ vis-charts vendors this repository as a git submodule pinned to a specific
 commit. A change here does **not** affect the plugin until vis-charts bumps
 that pin — which it does only once the new content passes its example gate.
 That delay is deliberate: it means an edit here can never break the plugin's
-build.
+build. Adding a new example block here means the plugin-side count in
+`src/examples.test.ts` (`covers both languages and the expected block total`)
+is now out of date — whoever bumps the pin needs to raise it too, or the
+plugin's test suite fails on a file you've never seen.
 
 CSS themes live in the plugin repo, not here — they target class names the
 plugin emits, so they change together with it.
