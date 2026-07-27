@@ -1,4 +1,4 @@
-2026-07-27
+
 # Axes and legend
 
 Left/right data axes, axis titles and ranges, the legend, group
