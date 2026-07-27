@@ -91,8 +91,15 @@ groups:
 ## Wikilink vs. plain-path references
 
 `data:` accepts a plain vault-relative path (as in the examples above) or
-an Obsidian wikilink, with or without a display alias — both resolve to
-the same file.
+an Obsidian wikilink, with or without a display alias — both resolve through
+the same lookup Obsidian uses for every `[[link]]`, so they are genuinely
+equivalent.
+
+That lookup means a bare filename (no folder in it, e.g. `sales.csv`)
+resolves to the file co-located with the note containing the block first,
+falling back to a shortest-unique-match elsewhere in the vault if none
+exists alongside the note. A full path from the vault root (e.g.
+`charts/sales.csv`) still resolves regardless of where the note lives.
 
 ```vis-graph2d
 options:
