@@ -2,7 +2,6 @@
 
 ## Per-block options
 
-````markdown
 ```vis-timeline
 options:
   height: 400px
@@ -12,13 +11,11 @@ items:
   - content: Battle of Marathon
     start: "-490-09-12"
 ```
-````
 
 ## Groups
 
 Assign items to labelled rows using `groups` and `group` on each item:
 
-````markdown
 ```vis-timeline
 groups:
   - id: military
@@ -34,11 +31,9 @@ items:
     end: "1072"
     group: political
 ```
-````
 
 Nest groups with `nestedGroups` (a list of child group IDs):
 
-````markdown
 ```vis-timeline
 groups:
   - id: europe
@@ -53,13 +48,11 @@ items:
     start: "1215"
     group: uk
 ```
-````
 
 ## Background items
 
 Shade a time range behind other items using `type: background`. Add `group` to confine the shading to a single row.
 
-````markdown
 ```vis-timeline
 items:
   - start: "1337"
@@ -70,7 +63,6 @@ items:
   - content: Battle of Agincourt
     start: "1415-10-25"
 ```
-````
 
 ## Date formats
 
