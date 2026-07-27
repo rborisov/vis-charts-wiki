@@ -4,6 +4,9 @@ group: rolling-stones-event
 className: landmark
 title: Free concert for 250,000 two days after Brian Jones drowned; Jagger read Shelley
 image:
+pubobs-plugins:
+  - id: dataview
+    version: 0.5.68
 ---
 ```dataviewjs
 await dv.view("show-image");

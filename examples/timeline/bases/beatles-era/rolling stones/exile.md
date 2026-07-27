@@ -1,9 +1,12 @@
 ---
-start: "1972-05-12"
+start: 1972-05-12
 group: rolling-stones-album
 className: landmark
 title: Double album recorded in Keith Richards' basement; often called the greatest rock album ever made
-image: "https://upload.wikimedia.org/wikipedia/en/c/ca/ExileMainSt.jpg"
+image: https://upload.wikimedia.org/wikipedia/en/c/ca/ExileMainSt.jpg
+pubobs-plugins:
+  - id: dataview
+    version: 0.5.68
 ---
 ```dataviewjs
 await dv.view("show-image");

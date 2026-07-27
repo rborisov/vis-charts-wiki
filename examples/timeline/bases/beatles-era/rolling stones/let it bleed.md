@@ -1,9 +1,12 @@
 ---
-start: "1969-12-05"
+start: 1969-12-05
 group: rolling-stones-album
 className: landmark
 title: Released one day before Altamont; Gimme Shelter opens the record
-image: "https://upload.wikimedia.org/wikipedia/en/c/c0/LetitbleedRS.jpg"
+image: https://upload.wikimedia.org/wikipedia/en/c/c0/LetitbleedRS.jpg
+pubobs-plugins:
+  - id: dataview
+    version: 0.5.68
 ---
 ```dataviewjs
 await dv.view("show-image");

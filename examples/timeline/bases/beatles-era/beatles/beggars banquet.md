@@ -1,8 +1,11 @@
 ---
-start: "1968-12-06"
+start: 1968-12-06
 group: rolling-stones-album
 title: Stripped-back return to blues roots, featuring Sympathy for the Devil
-image: "https://upload.wikimedia.org/wikipedia/commons/8/8b/BeggarsBanquetLP.jpg"
+image: https://upload.wikimedia.org/wikipedia/commons/8/8b/BeggarsBanquetLP.jpg
+pubobs-plugins:
+  - id: dataview
+    version: 0.5.68
 ---
 ```dataviewjs
 await dv.view("show-image");

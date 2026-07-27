@@ -1,8 +1,11 @@
 ---
-start: "1966-04-15"
+start: 1966-04-15
 group: rolling-stones-album
 title: First Stones album composed entirely of original Jagger–Richards songs
-image: "https://upload.wikimedia.org/wikipedia/en/8/8a/Aftermath_UK.jpg"
+image: https://upload.wikimedia.org/wikipedia/en/8/8a/Aftermath_UK.jpg
+pubobs-plugins:
+  - id: dataview
+    version: 0.5.68
 ---
 ```dataviewjs
 await dv.view("show-image");

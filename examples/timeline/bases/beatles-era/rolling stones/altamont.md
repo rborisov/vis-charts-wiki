@@ -1,7 +1,10 @@
 ---
-start: "1969-12-06"
+start: 1969-12-06
 group: rolling-stones-event
 title: Free festival turned fatal; widely seen as the end of the '60s idealism
+pubobs-plugins:
+  - id: dataview
+    version: 0.5.68
 ---
 ```dataviewjs
 await dv.view("show-image");

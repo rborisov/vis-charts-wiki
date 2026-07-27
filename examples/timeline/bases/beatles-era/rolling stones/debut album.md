@@ -1,8 +1,11 @@
 ---
-start: "1964-04-16"
+start: 1964-04-16
 group: rolling-stones-album
-title: Raw blues-rock debut that put the Stones on the UK chart at #1
-image: "https://upload.wikimedia.org/wikipedia/en/c/c1/RS64.jpg"
+title: Raw blues-rock debut that put the Stones on the UK chart at
+image: https://upload.wikimedia.org/wikipedia/en/c/c1/RS64.jpg
+pubobs-plugins:
+  - id: dataview
+    version: 0.5.68
 ---
 ```dataviewjs
 await dv.view("show-image");
