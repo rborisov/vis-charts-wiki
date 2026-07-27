@@ -30,4 +30,3 @@ items:
 - content: Fall of Constantinople
   start: "1453-05-29"
 ```
-
